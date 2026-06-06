@@ -16,7 +16,7 @@ DeepSeek Exporter 是一个零依赖 Chrome Manifest V3 扩展，用于从 `chat
 
 1. 打开 Chrome 的 `chrome://extensions`。
 2. 开启开发者模式。
-3. 点击“加载已解压的扩展程序”，选择本目录。
+3. 点击“加载已解压的扩展程序”，选择扩展。目录
 4. 打开或刷新 `https://chat.deepseek.com/` 并登录。
 5. 点击浏览器工具栏里的 DeepSeek Exporter。
 6. 在 popup 中刷新、勾选会话并导出 ZIP。
