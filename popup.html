@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DeepSeek Exporter</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main class="popup-shell">
+      <header class="popup-header">
+        <div>
+          <h1>DeepSeek Exporter</h1>
+          <p id="statusText">正在读取当前页面...</p>
+        </div>
+      </header>
+
+      <section class="toolbar" aria-label="会话操作">
+        <button id="refreshButton" type="button">刷新</button>
+        <button id="selectAllButton" type="button">全选</button>
+        <button id="clearButton" type="button">清空</button>
+        <button id="clearCacheButton" class="danger" type="button">清理缓存</button>
+      </section>
+
+      <section id="conversationList" class="conversation-list" aria-label="已加载会话"></section>
+
+      <footer class="footer">
+        <label class="option-row">
+          <input id="includeThinkingInput" type="checkbox" checked>
+          <span>导出思考/推理内容</span>
+        </label>
+        <div class="footer-actions">
+          <button id="exportButton" class="primary" type="button" disabled>导出 ZIP</button>
+          <button id="cancelExportButton" class="danger" type="button" disabled>终止导出</button>
+        </div>
+      </footer>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>

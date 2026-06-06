@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "DeepSeek Exporter",
+  "version": "0.1.0",
+  "description": "Export selected DeepSeek conversations as Markdown and JSON in a ZIP archive.",
+  "permissions": [
+    "tabs",
+    "downloads"
+  ],
+  "host_permissions": [
+    "https://chat.deepseek.com/*"
+  ],
+  "action": {
+    "default_title": "DeepSeek Exporter",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chat.deepseek.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
