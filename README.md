@@ -49,3 +49,6 @@ python3 -m json.tool manifest.json
 - 批量导出依赖后台标签逐个打开页面，网络慢或会话过长时会比较耗时。
 - ZIP 采用未压缩 store 格式，避免引入依赖；文件体积不会被压缩。
 - MV3 service worker 使用 data URL 触发下载，超大导出可能受浏览器 data URL 大小限制。
+
+# 友情链接
+[LinuxDO](https://linux.do/)
